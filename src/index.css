@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core Theme - Inspired by Jharkhand's natural beauty */
+    --background: 45 25% 98%;
+    --foreground: 86 45% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 86 45% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 86 45% 15%;
+
+    /* Primary - Forest Green (Jharkhand's lush forests) */
+    --primary: 86 68% 19%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Earth Brown (Rich soil and tribal heritage) */
+    --secondary: 18 66% 31%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Accent - Saffron (Cultural vibrancy) */
+    --accent: 35 100% 60%;
+    --accent-foreground: 86 45% 15%;
+
+    --muted: 45 25% 95%;
+    --muted-foreground: 86 20% 40%;
+
+    /* Deep Red (Tribal art and heritage) */
+    --destructive: 348 83% 47%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 25% 88%;
+    --input: 45 25% 88%;
+    --ring: 86 68% 19%;
+
+    --radius: 0.75rem;
+
+    /* Custom Tourism Colors */
+    --golden: 51 100% 50%;
+    --golden-foreground: 86 45% 15%;
+    
+    --tribal: 18 66% 31%;
+    --tribal-foreground: 0 0% 100%;
+
+    --nature: 86 68% 19%;
+    --nature-foreground: 0 0% 100%;
+
+    --cultural: 35 100% 60%;
+    --cultural-foreground: 86 45% 15%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--nature)), hsl(var(--cultural)), hsl(var(--golden)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--cultural)), hsl(var(--golden)));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--nature) / 0.3);
+    --shadow-cultural: 0 8px 25px -8px hsl(var(--cultural) / 0.4);
+    --shadow-golden: 0 6px 20px -6px hsl(var(--golden) / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 86 25% 8%;
+    --foreground: 45 25% 90%;
+
+    --card: 86 25% 10%;
+    --card-foreground: 45 25% 90%;
+
+    --popover: 86 25% 10%;
+    --popover-foreground: 45 25% 90%;
+
+    --primary: 86 68% 35%;
+    --primary-foreground: 86 25% 8%;
+
+    --secondary: 18 66% 25%;
+    --secondary-foreground: 45 25% 90%;
+
+    --muted: 86 25% 12%;
+    --muted-foreground: 45 15% 60%;
+
+    --accent: 35 100% 55%;
+    --accent-foreground: 86 25% 8%;
+
+    --destructive: 348 83% 40%;
+    --destructive-foreground: 45 25% 90%;
+
+    --border: 86 25% 15%;
+    --input: 86 25% 15%;
+    --ring: 86 68% 35%;
+
+    --golden: 51 100% 45%;
+    --golden-foreground: 86 25% 8%;
+    
+    --tribal: 18 66% 25%;
+    --tribal-foreground: 45 25% 90%;
+
+    --nature: 86 68% 35%;
+    --nature-foreground: 86 25% 8%;
+
+    --cultural: 35 100% 55%;
+    --cultural-foreground: 86 25% 8%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(var(--nature)), hsl(var(--cultural)), hsl(var(--golden)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--cultural)), hsl(var(--golden)));
+
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-cultural: 0 8px 25px -8px hsl(var(--cultural) / 0.3);
+    --shadow-golden: 0 6px 20px -6px hsl(var(--golden) / 0.2);
+
+    --sidebar-background: 86 25% 8%;
+    --sidebar-foreground: 45 25% 90%;
+    --sidebar-primary: 86 68% 35%;
+    --sidebar-primary-foreground: 86 25% 8%;
+    --sidebar-accent: 86 25% 12%;
+    --sidebar-accent-foreground: 45 25% 90%;
+    --sidebar-border: 86 25% 15%;
+    --sidebar-ring: 86 68% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
