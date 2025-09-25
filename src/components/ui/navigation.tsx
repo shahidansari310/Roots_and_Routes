@@ -52,7 +52,7 @@ export function Navigation() {
           <img
             src={rootsRoutesLogo}
             alt="Roots & Routes"
-            className="h-10 w-10 transition-transform duration-300 group-hover:scale-110"
+            className="h-[100px] w-[100px] transition-transform duration-300 group-hover:scale-110"
           />
           <div className="hidden sm:block">
             <h1 className="text-xl font-bold text-nature">Roots & Routes</h1>

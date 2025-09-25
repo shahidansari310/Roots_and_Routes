@@ -16,15 +16,16 @@ export function FloatingChatbot() {
   };
 
   return (
-    <div className="fixed bottom-6 right-[20px] z-50">
+    <div className="fixed bottom-6 right-6 z-50">
       {/* Chat Window */}
       <div
         className={cn(
-          "mb-4 w-80 bg-card border rounded-lg shadow-elegant transition-all duration-300",
-          isOpen 
-            ? "opacity-100 translate-y-0 pointer-events-auto" 
+          "fixed bottom-6 right-6 w-80 bg-card border rounded-lg shadow-elegant transition-all duration-300",
+          isOpen
+            ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 translate-y-4 pointer-events-none"
         )}
+
       >
         <div className="p-4 border-b bg-gradient-accent rounded-t-lg">
           <div className="flex items-center justify-between">
@@ -40,7 +41,7 @@ export function FloatingChatbot() {
             </button>
           </div>
         </div>
-        
+
         <div className="h-64 p-4 overflow-y-auto bg-background/95">
           <div className="space-y-3">
             <div className="bg-muted/50 p-3 rounded-lg max-w-[80%]">
@@ -50,7 +51,7 @@ export function FloatingChatbot() {
             </div>
           </div>
         </div>
-        
+
         <div className="p-4 border-t">
           <div className="flex space-x-2">
             <input
@@ -61,8 +62,8 @@ export function FloatingChatbot() {
               placeholder="Ask about destinations, activities..."
               className="flex-1 px-3 py-2 bg-muted/50 border-0 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-nature/30"
             />
-            <Button 
-              size="sm" 
+            <Button
+              size="sm"
               onClick={handleSendMessage}
               className="bg-nature hover:bg-nature/90"
             >
@@ -92,14 +93,14 @@ export function FloatingActionButtons() {
     <div className="fixed bottom-24 right-6 z-40 space-y-3">
       <Button
         size="sm"
-        className="rounded-full bg-cultural/90 hover:bg-cultural shadow-elegant"
+        className="flex flex-row rounded-full bg-cultural/90 hover:bg-cultural shadow-elegant gap-3"
         asChild
       >
         <a href="/ai-planner" className="flex items-center space-x-2">
           <span className="hidden sm:inline">Quick Plan</span>
         </a>
       </Button>
-      
+
       <Button
         size="sm"
         className="rounded-full bg-tribal/90 hover:bg-tribal shadow-elegant"
