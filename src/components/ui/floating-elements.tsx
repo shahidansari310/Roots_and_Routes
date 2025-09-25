@@ -20,7 +20,7 @@ export function FloatingChatbot() {
       {/* Chat Window */}
       <div
         className={cn(
-          "fixed bottom-6 right-6 w-80 bg-card border rounded-lg shadow-elegant transition-all duration-300",
+          "fixed bottom-6 mb-16 right-6 w-80 bg-card border rounded-lg shadow-elegant transition-all duration-300",
           isOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 translate-y-4 pointer-events-none"
@@ -90,10 +90,10 @@ export function FloatingChatbot() {
 
 export function FloatingActionButtons() {
   return (
-    <div className="fixed bottom-24 right-6 z-40 space-y-3">
+    <div className="fixed bottom-8 right-24 z-40 space-y-3">
       <Button
-        size="sm"
-        className="flex flex-row rounded-full bg-cultural/90 hover:bg-cultural shadow-elegant gap-3"
+        size="lg"
+        className="rounded-full bg-cultural/90 hover:bg-cultural shadow-elegant left-3"
         asChild
       >
         <a href="/ai-planner" className="flex items-center space-x-2">
@@ -102,7 +102,7 @@ export function FloatingActionButtons() {
       </Button>
 
       <Button
-        size="sm"
+        size="lg"
         className="rounded-full bg-tribal/90 hover:bg-tribal shadow-elegant"
         asChild
       >
