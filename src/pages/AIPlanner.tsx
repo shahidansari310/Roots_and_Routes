@@ -94,7 +94,7 @@ const AIPlanner = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5">
+    <div className="mt-12 min-h-screen bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
